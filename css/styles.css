@@ -1,0 +1,42 @@
+@font-face {
+    font-family: mullish-bold;
+    src: url("../assets/fonts/static/Mulish-Bold.ttf");
+}
+@font-face {
+    font-family: mullish-black;
+    src: url(../assets/fonts/static/Mulish-Medium.ttf);
+}
+*{
+    border: 0;
+    padding: 0;
+    background-color:  #a4b48c;
+}
+.contenedor{
+    display:grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 
+    "header header"
+    "article aside"
+    "footer footer"
+    ;
+    
+}
+
+.header{
+    font-family: mullish-bold;
+    height: 128px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.nav{
+    background-color: #588157;
+    height: 45px;
+    width: 100%;
+}
+.article{
+    background-color: #DAD7CD;
+}
+.aside{
+    background-color: #DAD7CD;
+}
