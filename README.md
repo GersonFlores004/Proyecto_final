@@ -16,3 +16,5 @@
 - el fondo de toda la pagina se definio en #a4b48c
 - el fondo de la seccion "nav" se definio en #588157
 - el fondo de la parte de "aside" y "seccion" se definio en #DAD7CD 
+
+- se finalizo la estetica en css de la parte del header, las otras secciones y lo que habia en ellas se fue eliminando para empezar de cero 

@@ -6,37 +6,40 @@
     font-family: mullish-black;
     src: url(../assets/fonts/static/Mulish-Medium.ttf);
 }
-*{
-    border: 0;
+body{
     padding: 0;
-    background-color:  #a4b48c;
+    margin: 0;
+    background-color: #a4b48c; 
 }
-.contenedor{
-    display:grid;
-    grid-template-columns: 250px 1fr;
-    grid-template-areas: 
-    "header header"
-    "article aside"
-    "footer footer"
-    ;
-    
+header{
+    display: flex;
+    background-image: url("../assets/img/fondo_encabezado.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
 }
-
-.header{
+header h1{
+    grid-area: titulo;
     font-family: mullish-bold;
-    height: 128px;
-    width: 100%;
+    color: #FFFFFF;
+    font-size: 48px;
     text-align: center;
-    color: white;
+    margin: 0;
 }
-.nav{
-    background-color: #588157;
-    height: 45px;
-    width: 100%;
+header img{
+    grid-area: logo;
+    height: 90px;
+    width: 90px;
 }
-.article{
-    background-color: #DAD7CD;
-}
-.aside{
-    background-color: #DAD7CD;
+.Titulo{
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-template-areas: "logo titulo";
+    height: 100%;
+    width: 634px;
+    align-items: end;
 }
